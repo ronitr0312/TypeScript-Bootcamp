@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "rootDir": "src",
+        "outDir": "dist",
+        "module": "CommonJs",
+        "lib": [
+            "ES5",
+            "DOM"
+        ],
+        "baseUrl": "src",
+        "types": [
+            "express"
+        ],
+        "allowJs": true,
+        "checkJs": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "strictNullChecks": true,
+        "removeComments": true
+    },
+    "files": [
+        //"29-intersection-type.ts",
+        //"28-never-type.ts",
+        //"src/12-module-import.ts"
+        //"src/30-tsconfig-lib.ts"
+        "src/32-plain-javascript.js"
+    ],
+    "include": [
+        //"src/**/*",
+        //"src/**/01*",
+        //"src/**/02*"
+        //"src/**/30*"
+    ],
+    "exclude": [
+        //"src/**/03*"
+    ]
+}
+
