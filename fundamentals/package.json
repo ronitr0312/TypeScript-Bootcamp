@@ -1,0 +1,15 @@
+{
+  "name": "fundamentals",
+  "version": "1.0.0",
+  "description": "CMD COMMANDS:",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
