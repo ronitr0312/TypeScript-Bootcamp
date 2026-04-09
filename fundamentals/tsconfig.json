@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "rootDir": "src",
+        "rootDir": "src/**/*",
         "outDir": "dist",
         "module": "CommonJs",
         "lib": [
             "ES5",
             "DOM"
         ],
-        "baseUrl": "src",
+        //"baseUrl": "src",
         "types": [
             "express"
         ],

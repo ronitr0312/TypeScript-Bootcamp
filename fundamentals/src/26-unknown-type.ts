@@ -27,6 +27,7 @@ unknownValue = "Hello World!";
 unknownValue = [];
 unknownValue = {};
 unknownValue =null;
+unknownValue=Object;
 unknownValue = undefined;
 
 let unknownvalue1: unknown = unknownValue;
@@ -41,8 +42,9 @@ if(typeof unknownValue == "number") {
 if(typeof unknownValue == "string") {
 let unknownvalue5: string = unknownValue; //Error if used directly without check
     }
+
 if(typeof unknownValue == "object") {
-    let unknownvalue6: object = unknownValue; //Error if used directly without check
+    let unknownvalue6: object|null = unknownValue; //Error if used directly without check
 }
 
 //let unknownvalue7: any[] = unknownValue; //Error if used directly without check

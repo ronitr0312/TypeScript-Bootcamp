@@ -1,8 +1,14 @@
 import {HasId} from "./02-interfaces";
 
-abstract class Course implements HasId{
 
-    /*private title: string;
+abstract class NewCourse {
+
+}
+
+abstract class Course implements HasId{
+/*
+
+    private _title: string;
     private subtitle: string;
     private creationDt: Date;
 
@@ -11,6 +17,7 @@ abstract class Course implements HasId{
         this.subtitle = subtitle;
         this.creationDt = creationDt;
     }
+
 */
 
     private static TOTAL_COURSES = 0;
@@ -27,8 +34,8 @@ abstract class Course implements HasId{
 
     }
 
-    id: string | undefined;
-    printId() {
+    id: string = "123456";
+    printId():string {
         throw new Error("Method not implemented.");
     }
 
@@ -64,32 +71,17 @@ abstract class Course implements HasId{
 
 }
 
-class FreeCourse extends Course{
+class FreeCourse extends Course {
 
-    constructor(title:string,
-    subtitle= "",
-                creationDt = new Date(2000,1,1)
-) {
-        super(title,0,subtitle,creationDt);
+    constructor(title: string,
+                subtitle = "",
+                creationDt = new Date(2000, 1, 1)
+    ) {
+        super(title, 0, subtitle, creationDt);
     }
 
     validate() {
-      console.log("free course is valid");
+        console.log("free course is valid");
 
-       }
+    }
 }
-
-const course = new Course("Typescript Bootcamp",10,"Lean fundamentals",
-    new Date(2000,1,1))
-
-console.log(course.age);
-
-const newCourse = new Course("Typescript Bootcamp",0);
-
-const CourseTitle = new Course(Course.TYPESCRIPT_TITLE,0);
-
-Course.printTitle(CourseTitle);
-
-const freeCourse:FreeCourse = new freeCourse("Angular Bootcamp");
-
-

@@ -4,17 +4,22 @@
 type CourseStatus = "draft" | "published";
 
 let courseStatus : CourseStatus;
+courseStatus = "draft";
 
-if(courseStatus === "draft"){
-
-}
-else if(courseStatus === "published"){
+if(courseStatus == "draft"){
 
 }
 else {
+    if(courseStatus == "published"){
 
-    const value = courseStatus; //this will be of type never
-    unexpectedError(courseStatus)
+    }
+    else {
+
+
+        const value = courseStatus; //this will be of type never
+
+        unexpectedError(courseStatus)
+    }
 }
 
 function unexpectedError(value:never){
